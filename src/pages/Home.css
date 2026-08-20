@@ -1,0 +1,21 @@
+/* ================================
+   HOME PAGE CONTAINER
+================================ */
+.home-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg, #080817);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.home-main {
+  width: 100%;
+  flex: 1;
+}
+
+.home-main section {
+  width: 100%;
+  position: relative;
+}

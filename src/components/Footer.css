@@ -1,0 +1,130 @@
+/* ================================
+   FOOTER CONTAINER
+================================ */
+.footer {
+  width: 100%;
+  background: #050510;
+  color: #ffffff;
+  border-top: 1px solid rgba(124, 58, 237, 0.15);
+  padding: 80px 7% 30px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  padding-bottom: 60px;
+}
+
+/* ================================
+   BRAND SECTION
+================================ */
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-logo span {
+  color: #8b5cf6;
+}
+
+.footer-bio {
+  margin-top: 16px;
+  color: #a1a1aa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 360px;
+}
+
+/* ================================
+   LINKS & SOCIALS
+================================ */
+.footer-links h4,
+.footer-socials h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a,
+.social-links a {
+  color: #a1a1aa;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+  color: #c084fc;
+  transform: translateX(3px);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ================================
+   BOTTOM BAR
+================================ */
+.footer-bottom {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+  color: #71717a;
+}
+
+.back-to-top {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-to-top:hover {
+  color: #c084fc;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 5% 30px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

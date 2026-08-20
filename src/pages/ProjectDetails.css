@@ -1,0 +1,278 @@
+.project-details {
+  min-height: 100vh;
+  padding: 80px 6% 100px;
+  background: #ffffff;
+}
+
+.project-details-header {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.back-projects {
+  display: inline-block;
+  margin-bottom: 45px;
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-projects:hover {
+  color: #8b5cf6;
+}
+
+.details-category {
+  display: block;
+  margin-bottom: 15px;
+  color: #8b5cf6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.project-details-header h1 {
+  margin: 0 0 20px;
+  color: #171717;
+  font-size: clamp(45px, 7vw, 80px);
+  line-height: 1;
+}
+
+.project-details-header p {
+  max-width: 750px;
+  margin: 0;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.project-main-image {
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto 80px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f3f3f3;
+}
+
+.project-main-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-information {
+  max-width: 1100px;
+  margin: 0 auto 100px;
+
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 80px;
+}
+
+.project-about > span,
+.project-features > span {
+  color: #8b5cf6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.project-about h2 {
+  margin: 15px 0 25px;
+  color: #171717;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.project-about p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.project-sidebar {
+  padding: 30px;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  height: fit-content;
+}
+
+.sidebar-item {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.sidebar-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.sidebar-item h3 {
+  margin: 0 0 15px;
+  color: #171717;
+  font-size: 17px;
+}
+
+.details-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.details-technologies span {
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: #f3f0ff;
+  color: #6841d8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.details-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.details-links a {
+  color: #171717;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.details-links a:hover {
+  color: #8b5cf6;
+}
+
+.project-features {
+  max-width: 1100px;
+  margin: 0 auto 100px;
+}
+
+.project-features h2 {
+  margin: 15px 0 40px;
+  color: #171717;
+  font-size: 42px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  border: 1px solid #e8e8e8;
+}
+
+.feature {
+  padding: 35px;
+  border: 1px solid #e8e8e8;
+}
+
+.feature > span {
+  color: #8b5cf6;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.feature h3 {
+  margin: 15px 0 10px;
+  color: #171717;
+  font-size: 20px;
+}
+
+.feature p {
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.project-navigation {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-navigation a {
+  color: #8b5cf6;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-navigation a:hover {
+  text-decoration: underline;
+}
+
+.project-not-found {
+  min-height: 100vh;
+  padding: 150px 20px;
+  text-align: center;
+}
+
+.project-not-found h1 {
+  font-size: 45px;
+  color: #171717;
+}
+
+.project-not-found p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.project-not-found a {
+  color: #8b5cf6;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .project-main-image {
+    height: 450px;
+  }
+
+  .project-information {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-details {
+    padding: 60px 20px 80px;
+  }
+
+  .project-main-image {
+    height: 300px;
+    border-radius: 14px;
+  }
+
+  .project-information {
+    margin-bottom: 70px;
+  }
+
+  .project-about h2 {
+    font-size: 30px;
+  }
+
+  .project-features h2 {
+    font-size: 34px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-navigation {
+    flex-direction: column;
+  }
+}
